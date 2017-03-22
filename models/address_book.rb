@@ -38,6 +38,10 @@ class AddressBook
         entries.delete(entry_to_delete)
     end
     
+    def detonate
+        @entries = []
+    end
+    
     # We defined import_from_csv. The method starts by reading the file, using File.read. 
     # The file will be in a CSV format. We use the CSV class to parse the file. The result
     # of CSV.parse is an object of type CSV::Table.
